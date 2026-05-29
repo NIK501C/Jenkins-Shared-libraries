@@ -1,4 +1,4 @@
 def call(String img){
   echo "This stage is building"
-  sh "docker build -t ${img}:latest ."
+  sh "/usr/bin/docker build -t ${img}:latest ."
 }
