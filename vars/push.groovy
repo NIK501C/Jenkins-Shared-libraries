@@ -1,4 +1,4 @@
-def come(String img){
+def call(String img){
   echo "This stage is pushing the image on DockerHub"
   withCredentials([usernamePassword("credentialsId":"DockerHubCred", passwordVariable: "DockerHubPass", usernameVariable: "DockerHubUser")]){
   sh "sudo docker login -u ${env.DockerHubUser} -p ${env.DockerHubPass} "
